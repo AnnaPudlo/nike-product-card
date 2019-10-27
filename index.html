@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nike product card</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/a41e43d0d5.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <header class="ba-header">
+        <div class="container ba-header__wrapper">
+            <a href="" class="ba-logo">
+                <img src="img/logo.png" alt="nike">
+            </a>
+
+            <nav class="ba-nav">
+                <ul class="ba-menu">
+                    <li class="ba-menu__item">
+                        <a href="" class="ba-menu__link">lifestyle</a>
+                    </li>
+                    <li class="ba-menu__item">
+                        <a href="" class="ba-menu__link ba-menu__link_active">running</a>
+                    </li>
+                    <li class="ba-menu__item">
+                        <a href="" class="ba-menu__link">football</a>
+                    </li>
+                    <li class="ba-menu__item">
+                        <a href="" class="ba-menu__link">skateboarding</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="ba-button_menu" aria-label="open menu">
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="ba-card">
+                <div class="ba-card__gallery">
+                    <img src="img/huarache.png" alt="shoes" class="ba-card__image">
+                    <button class="ba-button_zoom" aria-label="zoom">
+                        <span></span>
+                    </button>
+                    <ul class="ba-card__previews">
+                        <li class="ba-card__preview">
+                            <a href="">
+                                <img src="img/mini-thumb-1.jpg" alt="huarache preview" class="ba-card__mini-thumb">
+                            </a>
+                        </li>
+                        <li class="ba-card__preview">
+                            <a href="">
+                                <img src="img/mini-thumb-2.jpg" alt="huarache preview" class="ba-card__mini-thumb">
+                            </a>
+                        </li>
+                        <li class="ba-card__preview">
+                            <a href="">
+                                <img src="img/mini-thumb-3.jpg" alt="huarache preview" class="ba-card__mini-thumb">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ba-card__info">
+                    <button class="ba-button_close" aria-label="close this card">
+                        <span></span>
+                    </button>
+                    <span class="ba-badge ba-badge_new">New</span>
+                    <h1 class="ba-card__title">
+                        The
+                        <span>running </span>
+                        <br>
+                        has just began
+                    </h1>
+
+                    <div class="ba-card__rating">
+                        <h2 class="ba-card__subtitle">Huarache</h2>
+                        <div class="ba-stars">
+                            <input class="ba-stars__input" id="rating-5" name="rating" type="radio" value="5">
+                            <label class="ba-stars__item fa fa-star" for="rating-5" title="5 stars"></label>
+                            <input class="ba-stars__input" id="rating-4" name="rating" type="radio" value="4" checked>
+                            <label class="ba-stars__item fa fa-star" for="rating-4" title="4 stars"></label>
+                            <input class="ba-stars__input" id="rating-3" name="rating" type="radio" value="3">
+                            <label class="ba-stars__item fa fa-star" for="rating-3" title="3 stars"></label>
+                            <input class="ba-stars__input" id="rating-2" name="rating" type="radio" value="2">
+                            <label class="ba-stars__item fa fa-star" for="rating-2" title="2 stars"></label>
+                            <input class="ba-stars__input" id="rating-1" name="rating" type="radio" value="1">
+                            <label class="ba-stars__item fa fa-star" for="rating-1" title="1 star"></label>
+                        </div>
+                    </div>
+                    <div class="ba-card__price">
+                        $ 200
+                    </div>
+                    <div class="ba-card__size">
+                        <h2 class="ba-card__subtitle">Size</h2>
+                        <div class="ba-card__size-list">
+                            <input type="radio" id="radio1" name="size"><label for="radio1">7</label>
+                            <input type="radio" id="radio2" name="size"><label for="radio2">8</label>
+                            <input type="radio" id="radio3" name="size"><label for="radio3">9</label>
+                            <input type="radio" id="radio4" name="size" checked><label for="radio4">10</label>
+                            <input type="radio" id="radio5" name="size"><label for="radio5">11</label>
+                        </div>
+                    </div>
+
+                    <button class="ba-button ba-button_purple">add to cart</button>
+                    <button class="ba-button">wishlist</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
